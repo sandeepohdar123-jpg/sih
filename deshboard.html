@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Career Advisor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="dash-header">
+    <h1>Welcome, <span id="userName">User</span></h1>
+    <a href="index.html" class="btn">Logout</a>
+  </header>
+
+  <main class="dashboard">
+    <section class="profile">
+      <h2>Your Profile</h2>
+      <label>
+        Education:
+        <input type="text" id="eduInput" placeholder="e.g., B.Sc in CS">
+      </label>
+      <label>
+        Skills:
+        <input type="text" id="skillsInput" placeholder="e.g., HTML, Python">
+      </label>
+      <button id="saveProfile">Save Profile</button>
+
+      <h3>Saved Info:</h3>
+      <p>Education: <span id="edu">Not set</span></p>
+      <p>Skills: <span id="skills">Not set</span></p>
+    </section>
+
+    <section class="recommendations">
+      <h2>Recommended Careers</h2>
+      <ul id="careerList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CareerAdvisor</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
